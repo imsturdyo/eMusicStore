@@ -11,17 +11,39 @@ public class ProductDao {
 
     public List<Product> getProductList() {
         Product product1 = new Product();
-
         product1.setProductName("Guitar1");
         product1.setProductCategory("Instrument");
         product1.setProductDescription("This is a fender strat guitar!");
         product1.setProductPrice(1200);
         product1.setProductCondition("new");
         product1.setProductStatus("Active");
+        product1.setUnitInStock(11);
         product1.setProductManufacturer("Fender");
+
+        Product product2 = new Product();
+        product2.setProductName("Record1");
+        product2.setProductCategory("Record");
+        product2.setProductDescription("Awesome mix!!");
+        product2.setProductPrice(25);
+        product2.setProductCondition("new");
+        product2.setProductStatus("Active");
+        product2.setUnitInStock(51);
+        product2.setProductManufacturer("EMI");
+
+        Product product3 = new Product();
+        product3.setProductName("Speaker");
+        product3.setProductCategory("Accessories");
+        product3.setProductDescription("One of the best in the house");
+        product3.setProductPrice(55);
+        product3.setProductCondition("new");
+        product3.setProductStatus("Active");
+        product3.setUnitInStock(9);
+        product3.setProductManufacturer("Polk");
 
         productList = new ArrayList<Product>();
         productList.add(product1);
+        productList.add(product2);
+        productList.add(product3);
 
         return productList;
 
