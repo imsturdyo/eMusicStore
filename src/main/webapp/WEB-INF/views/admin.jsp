@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%--
   Created by IntelliJ IDEA.
   User: olumi
@@ -6,11 +7,12 @@
   Time: 06:50
   To change this template use File | Settings | File Templates.
 --%>
-<%@include file="/WEB-INF/views/template/header.jsp"%>
 
+<%@include file="/WEB-INF/views/template/header.jsp"%>
 
 <div class="container-wraper">
     <div class="container">
+        <br><br>
         <div class="page-header">
             <h1>Administrator Page</h1>
 

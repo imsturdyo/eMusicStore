@@ -13,6 +13,7 @@
 
 <div class="container-wraper">
     <div class="container">
+        <br><br>
         <div class="page-header">
             <h1>Product Inventory Page</h1>
 
