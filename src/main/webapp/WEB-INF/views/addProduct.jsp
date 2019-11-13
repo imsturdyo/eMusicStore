@@ -12,7 +12,7 @@
             <p class="lead">Fill the below information to add a product</p>
         </div>
 
-        <form:form action="${pageContext.request.contextPath}/admin/productInventory/addProduct" method="post" commandName="product" enctype="multipart/form-data">
+        <form:form action="${pageContext.request.contextPath}/admin/productInventory/addProduct?${_csrf.parameterName}=${_csrf.token}" method="post" commandName="product" enctype="multipart/form-data">
         <div class="form-group">
             <label for="name">Name</label> <form:errors path="productName" cssStyle="color: #ff0000;" />
             <form:input path="productName" id="name" class="form-Control" />
@@ -64,7 +64,7 @@
 
         <br><br>
 
-        <input type="submit" value="submit" class="btn btn-default">
+        <input type="submit" value="Submit" class="btn btn-default">
 
         <a href="<c:url value="/admin/productInventory" />" class="btn btn-default">Cancel</a>
 
