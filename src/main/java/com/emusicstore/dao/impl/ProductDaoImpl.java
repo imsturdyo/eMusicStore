@@ -1,4 +1,4 @@
-package com.emusicstore.dao.implication;
+package com.emusicstore.dao.impl;
 
 import com.emusicstore.dao.ProductDao;
 import com.emusicstore.model.Product;

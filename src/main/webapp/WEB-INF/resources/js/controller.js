@@ -18,14 +18,10 @@ cartApp.controller("cartCtrl", function ($scope, $http) {
     };
 
     $scope.addToCart = function (productId) {
-        console.log("before puy")
 
-        $http.put('/eMusic/rest/cart/add/' + productId).success(function (data) {
-            console.log(" here")
-
+        $http.put('/eMusicStore/rest/cart/add/' + productId).success(function (data) {
             $scope.refreshCart($http.get('/eMusicStore/rest/cart/cartId'));
             alert("Product successfully added to the cart!")
-            console.log("I'm here")
         });
     };
 
