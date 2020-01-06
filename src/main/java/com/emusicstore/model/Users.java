@@ -12,7 +12,7 @@ public class Users {
     private int usersId;
     private String username;
     private String password;
-    private int enabled;
+    private boolean enabled;
     private int customerId;
 
     public int getUsersId() {
@@ -39,11 +39,11 @@ public class Users {
         this.password = password;
     }
 
-    public int getEnabled() {
+    public boolean isEnabled() {
         return enabled;
     }
 
-    public void setEnabled(int enabled) {
+    public void setEnabled(boolean enabled) {
         this.enabled = enabled;
     }
 
