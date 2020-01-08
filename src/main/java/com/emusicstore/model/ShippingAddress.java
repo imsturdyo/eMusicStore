@@ -17,7 +17,7 @@ public class ShippingAddress implements Serializable {
     private String streetName;
     private String doorNumber;
     private String city;
-    private String county;
+    private String country;
     private String postcode;
 
     @OneToOne
@@ -55,12 +55,12 @@ public class ShippingAddress implements Serializable {
         this.city = city;
     }
 
-    public String getCounty() {
-        return county;
+    public String getCountry() {
+        return country;
     }
 
-    public void setCounty(String county) {
-        this.county = county;
+    public void setCountry(String country) {
+        this.country = country;
     }
 
     public String getPostcode() {
@@ -85,7 +85,7 @@ public class ShippingAddress implements Serializable {
                 "streetName='" + streetName + '\'' +
                 ", doorNumber='" + doorNumber + '\'' +
                 ", city='" + city + '\'' +
-                ", county='" + county + '\'' +
+                ", country='" + country + '\'' +
                 ", postcode='" + postcode + '\'' +
                 '}';
     }

@@ -36,7 +36,7 @@ public class Customer implements Serializable {
 
     @OneToOne
     @JoinColumn(name = "shippingAddressId")
-    private ShippingAddress shippingAddressAddress;
+    private ShippingAddress shippingAddress;
 
     @OneToOne
     @JoinColumn(name = "cartId")
@@ -107,12 +107,12 @@ public class Customer implements Serializable {
         this.billingAddress = billingAddress;
     }
 
-    public ShippingAddress getShippingAddressAddress() {
-        return shippingAddressAddress;
+    public ShippingAddress getShippingAddress() {
+        return shippingAddress;
     }
 
-    public void setShippingAddressAddress(ShippingAddress shippingAddressAddress) {
-        this.shippingAddressAddress = shippingAddressAddress;
+    public void setShippingAddress(ShippingAddress shippingAddress) {
+        this.shippingAddress = shippingAddress;
     }
 
     public Cart getCart() {
