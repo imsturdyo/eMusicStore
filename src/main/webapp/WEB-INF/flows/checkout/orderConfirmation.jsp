@@ -2,6 +2,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@include file="/WEB-INF/views/template/header.jsp"%>
+<jsp:useBean id="now" class="java.util.Date" />
 
 
 <div class="container-wrapper">
