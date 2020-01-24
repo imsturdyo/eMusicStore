@@ -60,8 +60,8 @@
         </div>
 
         <div class="form-group">
-            <label for="billingCounty">County</label>
-            <form:input path="billingAddress.country" id="billingCounty" class="form-Control"/>
+            <label for="billingCountry">Country</label>
+            <form:input path="billingAddress.country" id="billingCountry" class="form-Control"/>
         </div>
 
         <div class="form-group">
@@ -87,8 +87,8 @@
         </div>
 
         <div class="form-group">
-            <label for="shippingCounty">County</label>
-            <form:input path="shippingAddress.country" id="shippingCounty" class="form-Control"/>
+            <label for="shippingCountry">Country</label>
+            <form:input path="shippingAddress.country" id="shippingCountry" class="form-Control"/>
         </div>
 
         <div class="form-group">

@@ -32,8 +32,8 @@
         </div>
 
         <div class="form-group">
-            <label for="shippingCounty">County</label>
-            <form:input path="cart.customer.shippingAddress.country" id="shippingCounty" class="form-Control"/>
+            <label for="shippingCountry">Country</label>
+            <form:input path="cart.customer.shippingAddress.country" id="shippingCountry" class="form-Control"/>
         </div>
 
         <div class="form-group">

@@ -12,32 +12,31 @@
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img class="first-slide home-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+            <img class="first-slide home-image" src="<c:url value="/resources/images/back1.jpg" />" alt="First slide">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Example headline.</h1>
-                    <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    <h1>Welcome to My eMusicStore</h1>
+                    <p>Here you can browse and buy Instruments, Records and music related Accessories. Order Now for
+                        Your Amazing New Kit!</p>
+                    <p><a class="btn btn-lg btn-primary" href="<c:url value="/register" />" role="button">Sign up today</a></p>
                 </div>
             </div>
         </div>
         <div class="item">
-            <img class="second-slide home-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+            <img class="second-slide home-image" src="<c:url value="/resources/images/back2.jpg" />" alt="Second slide">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>Another example headline.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                    <h1>Facts You Should Know About Music</h1>
+                    <p>Music brings joy, to all of our hearts, It's one of those, emotional arts.</p>
                 </div>
             </div>
         </div>
         <div class="item">
-            <img class="third-slide home-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+            <img class="third-slide home-image" src="<c:url value="/resources/images/back3.jpg" />" alt="Third slide">
             <div class="container">
                 <div class="carousel-caption">
-                    <h1>One more for good measure.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                    <h1>It's A Jazz Affair</h1>
+                    <p>Through ups and downs, Somehow I manage to survive in life.</p>
                 </div>
             </div>
         </div>
@@ -63,7 +62,7 @@
     <div class="row">
         <div class="col-lg-4">
             <a class="btn btn-default" href="<c:url value="/product/productList?searchCondition=Instrument"/>" role="button">
-                <img class="img-circle" src="<c:url value="/resources/images/" />" alt="Instrument Image" width="140" height="140"></a>
+                <img class="img-circle" src="<c:url value="/resources/images/instrument.jpg" />" alt="Instrument Image" width="140" height="140"></a>
             </a>
         </div><!-- /.col-lg-4 -->
 
