@@ -64,6 +64,28 @@
             <a class="btn btn-default" href="<c:url value="/product/productList?searchCondition=Instrument"/>" role="button">
                 <img class="img-circle" src="<c:url value="/resources/images/instrument.jpg" />" alt="Instrument Image" width="140" height="140"></a>
             </a>
+
+            <h2>Instrument</h2>
+            <p>Well crafted and delicate instrument.</p>
+
+        </div><!-- /.col-lg-4 -->
+
+    <div class="row">
+        <div class="col-lg-4">
+            <a class="btn btn-default" href="<c:url value="/product/productList?searchCondition=Record"/>" role="button">
+                <img class="img-circle" src="<c:url value="/resources/images/record.jpg" />" alt="Instrument Image" width="140" height="140"></a>
+            </a>
+            <h2>Discography</h2>
+            <p>An exceptional collections of music records in favour of the traditional and modern genre of jazz.</p>
+        </div><!-- /.col-lg-4 -->
+
+    <div class="row">
+        <div class="col-lg-4">
+            <a class="btn btn-default" href="<c:url value="/product/productList?searchCondition=Accessory"/>" role="button">
+                <img class="img-circle" src="<c:url value="/resources/images/accessory.jpg" />" alt="Instrument Image" width="140" height="140"></a>
+            </a>
+            <h2>Accessory</h2>
+            <p>All musical and related geeky goods.</p>
         </div><!-- /.col-lg-4 -->
 
     </div><!-- /.row -->

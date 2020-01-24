@@ -5,11 +5,11 @@
 
 <script>
     $(document).ready(function () {
-        var searchCondition = '${searchCondition}'
+        var searchCondition = '${searchCondition}';
 
         $('.table').DataTable({
             "lengthMenu": [[1,2,3,5,10,-1], [1,2,3,5,10, "All"]],
-            "oSearch":{"sSearch":searchCondition}
+            "oSearch":{"sSearch" : searchCondition}
         });
     });
 </script>
