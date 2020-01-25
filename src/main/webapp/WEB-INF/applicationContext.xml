@@ -17,8 +17,8 @@
         <property name="dataSource" ref="dataSource"></property>
         <property name="hibernateProperties">
             <props>
-                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
-                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+                <prop key="hibernate.hbm2ddl.auto">create-drop</prop>
                 <prop key="hibernate.show_sql">true</prop>
                 <prop key="hibernate.format_sql">true</prop>
             </props>
@@ -44,14 +44,14 @@
         <security:form-login
             login-processing-url="/j_spring_security_check"
             login-page="/login"
-            default-target-url="/product/productList/"
+            default-target-url="/product/productList/all"
             authentication-failure-url="/login?error"
             username-parameter="username"
             password-parameter="password" />
         <security:logout
             logout-url="/logout"
             logout-success-url="/login?logout" />
-        <security:csrf disabled="true" />
+<!--        <security:csrf disabled="false" />-->
     </security:http>
 
     <security:authentication-manager>

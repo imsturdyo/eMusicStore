@@ -22,7 +22,7 @@
     </view-state>
 
     <view-state id="orderConfirmation" >
-        <transition on="orderConfirm" to="processOrder" />
+        <transition on="orderConfirmed" to="processOrder" />
         <transition on="backToCollectShippingDetail" to="collectShippingDetail" />
     </view-state>
 
