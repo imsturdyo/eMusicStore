@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: olumi
-  Date: 02/10/2019
-  Time: 18:49
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -18,7 +12,13 @@
 
     <title>My Music Store</title>
 
+<%--    Angular--%>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js" > </script>
+
+<%--    Jquery--%>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet">
@@ -28,6 +28,8 @@
 
     <!-- Main CSS -->
     <link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
+
+    <link href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css" rel="stylesheet">
 
 
 </head>
@@ -46,13 +48,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">My Music Store</a>
+                    <a class="navbar-brand" href="<c:url value="/" />">My Music Store</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="<c:url value="/" />">Home</a></li>
-                        <li><a href="<c:url value="/product/productList" />">Products</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="<c:url value="/product/productList/all" />">Products</a></li>
+                        <li><a href="<c:url value="/about" />">About</a></li>
                     </ul>
                     <ul class="nav navbar-nav pull-right">
                         <c:if test="${pageContext.request.userPrincipal.name != null}">
@@ -84,4 +86,5 @@
         </script>
     </div>
 </div>
-
+</body>
+</html>

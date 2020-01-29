@@ -5,19 +5,20 @@
        xmlns:webflow-config="http://www.springframework.org/schema/webflow-config"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd http://www.springframework.org/schema/webflow-config http://www.springframework.org/schema/webflow-config/spring-webflow-config.xsd">
 
-    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="org.h2.Driver" />
-        <property name="url" value="jdbc:h2:tcp://localhost/~/test" />
-        <property name="username" value="sa" />
-        <property name="password" value="s" />
+    <bean id="dataSource"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/emusicstore"/>
+        <property name="username" value="root" />
+        <property name="password" value="" />
     </bean>
 
     <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean" >
         <property name="dataSource" ref="dataSource"></property>
         <property name="hibernateProperties">
             <props>
-                <prop key="hibernate.dialect">org.hibernate.dialect.H2Dialect</prop>
-                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+                <prop key="hibernate.hbm2ddl.auto">create-drop</prop>
                 <prop key="hibernate.show_sql">true</prop>
                 <prop key="hibernate.format_sql">true</prop>
             </props>
@@ -40,17 +41,18 @@
     <security:http auto-config ="true" use-expressions="true">
         <security:intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN')" />
         <security:intercept-url pattern="/customer/**" access="hasRole('ROLE_USER')" />
+        <security:intercept-url pattern="/**" access="permitAll" requires-channel="https"/>
         <security:form-login
             login-processing-url="/j_spring_security_check"
             login-page="/login"
-            default-target-url="/product/productList/"
+            default-target-url="/product/productList/all"
             authentication-failure-url="/login?error"
             username-parameter="username"
             password-parameter="password" />
         <security:logout
             logout-url="/logout"
             logout-success-url="/login?logout" />
-        <security:csrf disabled="true" />
+<!--        <security:csrf disabled="false" />-->
     </security:http>
 
     <security:authentication-manager>
@@ -74,4 +76,7 @@
     <bean id="flowHandlerAdapter" class="org.springframework.webflow.mvc.servlet.FlowHandlerAdapter">
         <property name="flowExecutor" ref="flowExecutor" />
     </bean>
+
+<!--    https://www.baeldung.com/spring-channel-security-https still get valid one if you need-->
+
 </beans>

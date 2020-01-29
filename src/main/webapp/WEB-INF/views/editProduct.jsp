@@ -9,7 +9,7 @@
         <div class="page-header">
             <h1>Edit Product</h1>
 
-            <p class="lead">Please update product</p>
+            <p class="lead">Please update the product info</p>
         </div>
 
         <form:form action="${pageContext.request.contextPath}/admin/product/editProduct" method="post" commandName="product" enctype="multipart/form-data">
@@ -70,8 +70,6 @@
         <input type="submit" value="submit" class="btn btn-default">
 
         <a href="<c:url value="/admin/productInventory" />" class="btn btn-default">Cancel</a>
-
-
         </form:form>
 
 <%@include file="/WEB-INF/views/template/footer.jsp" %>

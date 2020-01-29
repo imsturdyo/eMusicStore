@@ -50,8 +50,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="billingCounty">County</label>
-                    <form:input path="cart.customer.billingAddress.country" id="billingCounty" class="form-Control"/>
+                    <label for="billingCountry">Country</label>
+                    <form:input path="cart.customer.billingAddress.country" id="billingCountry" class="form-Control"/>
                 </div>
 
                 <div class="form-group">

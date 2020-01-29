@@ -18,7 +18,7 @@
             <div ng-controller = "cartCtrl" ng-init = "initCartId('${cartId}')">
                 <div>
                     <a class="btn btn-danger pull-left" ng-click="clearCart()"><span class="glyphicon glyphicon-remove-sign"></span>Clear Cart</a>
-                    <a href="<spring:url value="/order/${cartId}" />" class="btn-success pull-right"><span class="glyphicon-shopping-cart glyphicon"></span>Checkout</a>
+                    <a href="<spring:url value="/order/${cartId}" />" class="btn-success pull-right"><span class="glyphicon glyphicon-shopping-cart"></span>Checkout</a>
                 </div>
 
                 <table class="table table-hover">
@@ -46,11 +46,12 @@
                     </tr>
                 </table>
 
-                <a href="<spring:url value="/product/productList" /> " class="btn btn-default">Continue Shopping</a>
+                <a href="<spring:url value="/product/productList/all" /> " class="btn btn-default">Continue Shopping</a>
                 </div>
         </section>
     </div>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
 <script src="<c:url value="/resources/js/controller.js" /> "></script>
 <%@include file="/WEB-INF/views/template/footer.jsp" %>

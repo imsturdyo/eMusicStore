@@ -2,6 +2,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@include file="/WEB-INF/views/template/header.jsp"%>
+<jsp:useBean id="now" class="java.util.Date" />
 
 
 <div class="container-wrapper">
@@ -87,7 +88,7 @@
                                         <h4><strong>Grand Total: </strong></h4>
                                     </td>
                                     <td class="text-center text-danger">
-                                        <h4><strong>$ ${order.cart.grandTotal}</strong></h4>
+                                        <h4><strong>${order.cart.grandTotal} GBP</strong></h4>
                                     </td>
                                 </tr>
                                 </tbody>
